@@ -1,0 +1,12 @@
+# BUILD FILE SYNTAX: SKYLARK
+prebuilt_jar(name = 'netty',
+  binary_jar = 'netty-all-4.1.14.Final.jar',
+  maven_coords = 'io.netty:netty-all:4.1.14.Final',
+  visibility = [
+    '//java/client/src/org/openqa/selenium/safari:safari',
+    '//java/client/test/org/openqa/selenium/safari:tests',
+    '//java/client/test/org/openqa/selenium/testing:test-base',
+    '//third_party/java/little_proxy:little_proxy',
+    '//third_party/java/webbit:webbit',
+  ],
+)
